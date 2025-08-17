@@ -9,10 +9,10 @@
 
 :root {
   /* Brand - Orange Theme */
-  --brand-ink: #C2410C;      /* headings, primary links - orange-700 */
-  --brand-ink-600: #EA580C;  /* hover/active - orange-600 */
-  --accent-1: #F97316;       /* optional subtle accents - orange-500 */
-  --accent-2: #FB923C;       /* rare highlight - orange-400 */
+  --brand-ink: #FB923C;      /* headings, primary links - orange-400 */
+  --brand-ink-600: #F97316;  /* hover/active - orange-500 */
+  --accent-1: #EA580C;       /* optional subtle accents - orange-600 */
+  --accent-2: #C2410C;       /* rare highlight - orange-700 */
 
   /* Neutrals */
   --bg: #ffffff;
@@ -137,6 +137,66 @@ button {
 }
 button:hover {
   background-color: var(--btn-hover);
+}
+
+/* Navbar button overrides */
+.navbar-btn {
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.5rem 1rem !important;
+}
+.navbar-btn:hover {
+  background-color: transparent !important;
+  color: #ea580c !important;
+}
+.navbar-btn:focus {
+  background-color: transparent !important;
+  color: #000000 !important;
+  outline: none !important;
+}
+
+/* Navbar link overrides */
+a.navbar-btn {
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0.5rem 1rem !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+a.navbar-btn:hover {
+  background-color: transparent !important;
+  color: #ea580c !important;
+}
+
+/* Dropdown menu content styling */
+.navbar-dropdown-content {
+  color: #000000 !important;
+}
+.navbar-dropdown-content .font-medium {
+  color: #000000 !important;
+}
+.navbar-dropdown-content p {
+  color: #4B5563 !important;
+}
+.navbar-dropdown-content a {
+  color: #000000 !important;
+}
+.navbar-dropdown-content a:hover {
+  color: #ea580c !important;
+  background-color: #fed7aa !important;
+}
+
+/* Mobile menu text color override */
+.mobile-menu-link {
+  color: #000000 !important;
+}
+.mobile-menu-link:hover {
+  color: #ea580c !important;
+  background-color: #fed7aa !important;
 }
 button:focus,
 button:focus-visible {
